@@ -6,6 +6,7 @@ Blogger::Application.routes.draw do
   resources :tags
   resources :authors
   resources :archives
+  resources :popular_articles
   
   resources :author_sessions, only: [ :new, :create, :destroy ]
 

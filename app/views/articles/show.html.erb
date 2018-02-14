@@ -10,6 +10,8 @@
 <% end %>
 <p><%= @article.body %></p>
 
+<p>Views: <%= @article.view_count %></p>
+
 <h3>Comment(<%= @article.comments.size %>)</h3>
 <%= render partial: 'articles/comment', collection: @article.comments %>
 
