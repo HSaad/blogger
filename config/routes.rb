@@ -5,7 +5,8 @@ Blogger::Application.routes.draw do
   end
   resources :tags
   resources :authors
-
+  resources :archives
+  
   resources :author_sessions, only: [ :new, :create, :destroy ]
 
   get 'login' => 'author_sessions#new'

@@ -13,6 +13,16 @@
       <%= flash.notice %>
     </p>
     <div id="container">
+
+      <div id="nav">
+        <h2>Navigation</h2>
+        <%= link_to "Article List", articles_path%> <br>
+        <%= link_to "Tag List", tags_path%><br>
+        <%= link_to "Archive", archives_path%><br>
+        <%= link_to "Most Popular", articles_path%><br>
+        <%= link_to "Feed", articles_path%>
+      </div>
+
       <div id="content">
         <%= yield %>
         <hr>
