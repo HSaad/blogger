@@ -9841,3 +9841,65 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-02-14 14:34:46 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `config' for ApplicationRecord(abstract):Class
+Did you mean?  concerning):
+  
+app/models/application_record.rb:3:in `<class:ApplicationRecord>'
+app/models/application_record.rb:1:in `<top (required)>'
+app/models/article.rb:1:in `<top (required)>'
+app/controllers/articles_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2018-02-14 14:34:47 -0500
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `config' for ApplicationRecord(abstract):Class
+Did you mean?  concerning):
+  
+app/models/application_record.rb:3:in `<class:ApplicationRecord>'
+app/models/application_record.rb:1:in `<top (required)>'
+app/models/article.rb:1:in `<top (required)>'
+app/controllers/articles_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2018-02-14 14:34:58 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `config' for ApplicationRecord(abstract):Class
+Did you mean?  concerning):
+  
+app/models/application_record.rb:3:in `<class:ApplicationRecord>'
+app/models/application_record.rb:1:in `<top (required)>'
+app/models/article.rb:1:in `<top (required)>'
+app/controllers/articles_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2018-02-14 14:35:00 -0500
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `config' for ApplicationRecord(abstract):Class
+Did you mean?  concerning):
+  
+app/models/application_record.rb:3:in `<class:ApplicationRecord>'
+app/models/application_record.rb:1:in `<top (required)>'
+app/models/article.rb:1:in `<top (required)>'
+app/controllers/articles_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2018-02-14 14:35:22 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 160ms (Views: 153.9ms | ActiveRecord: 1.0ms)
+
+
