@@ -6,6 +6,8 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= auto_discovery_link_tag :atom, "/feed" %>
+<%= auto_discovery_link_tag :rss, "/feed.rss" %>
   </head>
 
   <body>
@@ -20,7 +22,7 @@
         <%= link_to "Tag List", tags_path%><br>
         <%= link_to "Archive", archives_path%><br>
         <%= link_to "Most Popular", popular_articles_path%><br>
-        <%= link_to "Feed", articles_path%>
+        <%= link_to "Feed", feed_path%>
       </div>
 
       <div id="content">

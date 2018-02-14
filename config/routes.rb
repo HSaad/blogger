@@ -3,6 +3,7 @@ Blogger::Application.routes.draw do
   resources :articles do
   	resources :comments
   end
+
   resources :tags
   resources :authors
   resources :archives
@@ -12,4 +13,9 @@ Blogger::Application.routes.draw do
 
   get 'login' => 'author_sessions#new'
   get 'logout' => 'author_sessions#destroy'
+
+  resources :articles
+  match '/feed' => 'articles#feed', :via => [:get], 
+      :as => :feed,
+      :defaults => { :format => 'atom' }
 end

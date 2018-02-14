@@ -48,4 +48,20 @@ class ArticlesController < ApplicationController
 		redirect_to article_path(@article)
 	end
 
+	def feed
+  	@title = "RSS Feed"
+
+  	@articles = Article.order("updated_at desc")
+
+  	# this will be our Feed's update timestamp
+  	@updated = @articles.first.updated_at unless @articles.empty?
+
+  	respond_to do |format|
+    	format.atom { render :layout => false }
+
+    # we want the RSS feed to redirect permanently to the ATOM feed
+    	format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
+ 		end
+	end
+
 end
